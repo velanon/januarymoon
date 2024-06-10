@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f9;
+    background-color: #3C3E56;
 }
 
 .container {
@@ -15,7 +15,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background-color: #fff;
-    width: 300px; /* Adjusted width to better center the form */
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
 }
 
 .hidden {
