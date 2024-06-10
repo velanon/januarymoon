@@ -1,11 +1,11 @@
 body {
-    font-family: Arial, Times New Roman;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #3c3e56;
+    background-color: #f4f4f9;
 }
 
 .container {
@@ -20,33 +20,8 @@ body {
     box-sizing: border-box;
 }
 
-#menu {
-    text-align: center;
-}
-
-#menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#menu ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-#menu ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-}
-
-#menu ul li a:hover {
-    color: #007bff;
-}
-
 .hidden {
     display: none;
-
 }
 
 input[type="password"] {
@@ -75,4 +50,28 @@ button:hover {
 
 #content {
     margin-top: 20px;
+}
+
+#menu {
+    text-align: center;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+#menu ul li a:hover {
+    color: #007bff;
 }
