@@ -2,7 +2,7 @@ document.getElementById('password-form').addEventListener('submit', function(eve
     event.preventDefault();
     
     const password = document.getElementById('password').value;
-    const correctPassword = '011424'; 
+    const correctPassword = 'toad011424aurora'; 
 
     if (password === correctPassword) {
         document.getElementById('password-form').classList.add('hidden');
