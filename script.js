@@ -2,7 +2,7 @@ document.getElementById('password-form').addEventListener('submit', function(eve
     event.preventDefault();
     
     const password = document.getElementById('password').value;
-    const correctPasswordHash = 'c0c7c76d30bd3dcaefc96f40275bdc0a'; // SHA-256 hash of 'toad011424aurora'
+    const correctPasswordHash = 'c0c7c76d30bd3dcaefc96f40275bdc0a'; 
 
     if (hashPassword(password) === correctPasswordHash) {
         incrementPasswordCount();
