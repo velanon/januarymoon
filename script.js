@@ -6,7 +6,7 @@ document.getElementById('password-form').addEventListener('submit', function(eve
     console.log(hashedPassword);
 
     if (hashedPassword === correctPasswordHash) {
-        window.location.href = 'menu.html'; // Redirect to the menu page
+        window.location.href = 'menu.html';
     } else {
         alert('Incorrect password. Please try again. I know you can remember it.');
     }
