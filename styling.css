@@ -47,6 +47,12 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px;
+  padding: 10px;
+}
 
 #menu ul {
     list-style-type: none;
