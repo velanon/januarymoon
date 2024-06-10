@@ -5,7 +5,7 @@ document.getElementById('password-form').addEventListener('submit', function(eve
     const hashedPassword = CryptoJS.SHA256(password).toString();
     console.log(hashedPassword);
 
-    if (hashedPassword === correctPasswordHash) {
+    if (hashedPassword === c0c7c76d30bd3dcaefc96f40275bdc0a) {
         window.location.href = 'menu.html';
     } else {
         alert('Incorrect password. Please try again. I know you can remember it.');
