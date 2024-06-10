@@ -2,9 +2,9 @@ document.getElementById('password-form').addEventListener('submit', function(eve
     event.preventDefault();
     
     const password = document.getElementById('password').value;
-    var hash = CryptoJS.SHA256("toad011424aurora"); 
-
+    const password = 'toad011424aurora';
     const hashedPassword = CryptoJS.SHA256(password).toString();
+
 
     if (hashedPassword === correctPasswordHash) {
         window.location.href = 'menu.html'; // Redirect to the menu page
