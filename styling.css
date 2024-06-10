@@ -5,7 +5,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f4f4f9;
+    background-color: #3c3e56; /* Updated background color */
 }
 
 .container {
@@ -39,9 +39,14 @@ button {
     font-size: 16px;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
+    border-radius: 0; /* Make buttons square */
     background-color: #007bff;
     color: #fff;
+    margin-right: -4px; /* Remove default margin between buttons */
+}
+
+button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
 }
 
 button:hover {
@@ -63,13 +68,14 @@ button:hover {
 
 #menu ul li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: -4px; /* Remove default margin between buttons */
 }
 
 #menu ul li a {
     text-decoration: none;
     color: #333;
     font-size: 18px;
+    padding: 10px 20px; /* Adjust padding to match button padding */
 }
 
 #menu ul li a:hover {
