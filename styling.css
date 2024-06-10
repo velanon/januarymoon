@@ -1,23 +1,22 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #3c3e56; /* Updated background color */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background-color: #3c3e56; /* Updated background color */
 }
 
 .container {
     text-align: center;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background-color: #fff;
-    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
     max-width: 400px;
+    width: 100%;
     box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .hidden {
@@ -36,13 +35,13 @@ input[type="password"] {
 
 button {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 18px; /* Increased font size */
     cursor: pointer;
     border: none;
-    border-radius: 0; /* Make buttons square */
+    border-radius: 5px; /* Rounded corners */
     background-color: #007bff;
     color: #fff;
-    margin-right: -4px; /* Remove default margin between buttons */
+    margin-right: 10px; /* Added margin between buttons */
 }
 
 button:last-child {
@@ -53,12 +52,9 @@ button:hover {
     background-color: #0056b3;
 }
 
-#content {
-    margin-top: 20px;
-}
-
-#menu {
-    text-align: center;
+h1 {
+    font-size: 24px; /* Decreased font size for the title */
+    margin-bottom: 20px; /* Added margin at the bottom of the title */
 }
 
 #menu ul {
@@ -68,7 +64,7 @@ button:hover {
 
 #menu ul li {
     display: inline-block;
-    margin-right: -4px; /* Remove default margin between buttons */
+    margin-right: 10px; /* Added margin between menu items */
 }
 
 #menu ul li a {
