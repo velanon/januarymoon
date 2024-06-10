@@ -2,33 +2,29 @@ document.getElementById('password-form').addEventListener('submit', function(eve
     event.preventDefault();
     
     const password = document.getElementById('password').value;
-    const correctPassword = 'toad011424aurora'; // Ensure this matches your intended password
+    const correctPasswordHash = 'c0c7c76d30bd3dcaefc96f40275bdc0a'; // SHA-256 hash of 'toad011424aurora'
 
-    if (password === correctPassword) {
-        window.location.href = 'menu.html'; // Redirect to the menu page
-        
-        // Increment password count
+    if (hashPassword(password) === correctPasswordHash) {
         incrementPasswordCount();
-        
-        // Update the display of password count
         updatePasswordCountDisplay();
+        window.location.href = 'menu.html'; // Redirect to the menu page
     } else {
         alert('Incorrect password. Please try again. I know you can remember it.');
     }
 });
 
+// Function to hash the password using SHA-256
+function hashPassword(password) {
+    return CryptoJS.SHA256(password).toString();
+}
+
 // Function to increment the password count
 function incrementPasswordCount() {
-    // Check if the password count is already stored in local storage
     let passwordCount = localStorage.getItem('passwordCount');
-
-    // If not stored yet, initialize it to 0
     if (!passwordCount) {
         localStorage.setItem('passwordCount', '0');
         passwordCount = 0;
     }
-
-    // Increment the count and store it in local storage
     passwordCount++;
     localStorage.setItem('passwordCount', passwordCount.toString());
     console.log(`Password entered ${passwordCount} times.`);
