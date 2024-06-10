@@ -1,22 +1,24 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     background-color: #3c3e56; /* Updated background color */
 }
 
 .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content-wrapper {
     text-align: center;
     border: 1px solid #ccc;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     background-color: #fff;
-    width: 100%;
     max-width: 400px;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -28,10 +30,10 @@ input[type="password"] {
     padding: 10px;
     font-size: 16px;
     margin: 10px 0;
-    width: calc(100% - 22px); /* Adjusted to fit inside the container with padding */
+    width: calc(100% - 22px);
     border: 1px solid #ccc;
     border-radius: 5px;
-    text-align: center; /* Center the placeholder text */
+    text-align: center;
 }
 
 button {
@@ -39,14 +41,10 @@ button {
     font-size: 16px;
     cursor: pointer;
     border: none;
-    border-radius: 0; /* Make buttons square */
+    border-radius: 5px; /* Adjusted border radius to make buttons rounded */
     background-color: #007bff;
     color: #fff;
-    margin-right: -4px; /* Remove default margin between buttons */
-}
-
-button:last-child {
-    margin-right: 0; /* Remove margin from the last button */
+    margin-top: 10px; /* Added margin between buttons */
 }
 
 button:hover {
@@ -57,10 +55,6 @@ button:hover {
     margin-top: 20px;
 }
 
-#menu {
-    text-align: center;
-}
-
 #menu ul {
     list-style-type: none;
     padding: 0;
@@ -68,14 +62,14 @@ button:hover {
 
 #menu ul li {
     display: inline-block;
-    margin-right: -4px; /* Remove default margin between buttons */
+    margin-right: 10px; /* Added margin between menu items */
 }
 
 #menu ul li a {
     text-decoration: none;
     color: #333;
     font-size: 18px;
-    padding: 10px 20px; /* Adjust padding to match button padding */
+    padding: 10px 20px;
 }
 
 #menu ul li a:hover {
