@@ -1,7 +1,7 @@
 document.getElementById('password-form').addEventListener('submit', function(event) {
     event.preventDefault();
     
-    const correctPasswordHash = '4ea5c508a6566e76240543f8feb06fd457777be39549c4016436afda65d2330e'; // Correct hashed value of the password
+    const correctPasswordHash = '189dd24609c5542a85dce3516fb4ae7c0ae93d2b7cbe13b352c3695b5fc62ae3'; // Correct hashed value of the password
     const password = document.getElementById('password').value; // Get the value of the password input field
     const hashedPassword = CryptoJS.SHA256(password).toString(); // Hash the entered password
 
