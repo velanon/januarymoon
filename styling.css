@@ -41,20 +41,11 @@ button {
     border-radius: 5px; /* Rounded corners */
     background-color: #007bff;
     color: #fff;
-    margin-right: 10px; /* Added margin between buttons */
-}
-
-button:last-child {
-    margin-right: 0; /* Remove margin from the last button */
+    margin: 10px; /* Added margin between buttons */
 }
 
 button:hover {
     background-color: #0056b3;
-}
-
-h1 {
-    font-size: 24px; /* Decreased font size for the title */
-    margin-bottom: 20px; /* Added margin at the bottom of the title */
 }
 
 #menu ul {
@@ -64,7 +55,7 @@ h1 {
 
 #menu ul li {
     display: inline-block;
-    margin-right: 10px; /* Added margin between menu items */
+    margin: 0 10px; /* Added margin between menu items */
 }
 
 #menu ul li a {
