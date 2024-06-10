@@ -20,8 +20,33 @@ body {
     box-sizing: border-box;
 }
 
+#menu {
+    text-align: center;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+#menu ul li a:hover {
+    color: #007bff;
+}
+
 .hidden {
     display: none;
+
 }
 
 input[type="password"] {
