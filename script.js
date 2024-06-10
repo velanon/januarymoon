@@ -2,7 +2,7 @@ document.getElementById('password-form').addEventListener('submit', function(eve
     event.preventDefault();
     
     const password = document.getElementById('password').value;
-    const correctPasswordHash = 'c0c7c76d30bd3dcaefc96f40275bdc0a'; 
+    var hash = CryptoJS.SHA256("toad011424aurora"); 
 
     const hashedPassword = CryptoJS.SHA256(password).toString();
 
